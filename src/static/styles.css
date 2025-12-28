@@ -112,6 +112,12 @@ button:hover {
   margin-top: 20px;
   padding: 10px;
   border-radius: 4px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  min-width: 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
 }
 
 .success {
@@ -141,4 +147,58 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+.participants {
+  margin-top: 12px;
+}
+
+.participants strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 14px;
+}
+
+.participants-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.participant-item {
+  background: #ffffff;
+  border: 1px solid #eef2ff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-left: 10px;
+  flex-shrink: 0;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.no-participants {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  padding: 6px 0;
 }
